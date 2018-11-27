@@ -46,7 +46,6 @@ RUN conda env update --name root --file /home/$NB_USER/tmp/base-env.yml
 
 RUN rm -rf /home/$NB_USER/tmp
 
-     
 # Activate ipywidgets extension in the environment that runs the notebook server
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix 
 RUN jupyter nbextension enable --py ipyleaflet --sys-prefix
@@ -70,5 +69,4 @@ ENV XDG_CACHE_HOME /home/$NB_USER/.cache/
 RUN MPLBACKEND=Agg python -c "import matplotlib.pyplot" && \
     fix-permissions /home/$NB_USER
 
-pip install -e .
 USER $NB_USER
