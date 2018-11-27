@@ -4,40 +4,42 @@ channels:
   - conda-forge
 
 dependencies:
-  - wget
-  - tmux
-  - gdal
-  - imagemagick
-  - ffmpeg
-  - parallel
-  - coreutils
-  - htop
-  - lastools
 
-  - ipython
-  - jupyter
-  - ipdb
-  - numpy
-  - scipy
-  - matplotlib
-  - pandas
-  - rasterio
-  - geopandas
-  - xarray
-  - dask
-  - cartopy
-  - shapely
-  - fiona
-  - pillow
-  - opencv
-  - scikit-image
   - astropy
-  - scikit-learn
+  - cartopy
+  - coreutils
   - cython
+  - dask
+  - ffmpeg
+  - fiona
+  - gdal
+  - geopandas
   - h5py 
+  - htop
+  - imagemagick
+  - ipdb
+  - ipython
+  - ipyleaflet
+  - ipywidgets
+  - jupyter
+  - lastools
+  - matplotlib
   - netCDF4
-  - pytz
+  - numpy
+  - opencv
+  - pandas
+  - parallel
+  - pillow
   - python-dateutil
+  - pytz
+  - rasterio
+  - scikit-image
+  - scikit-learn
+  - scipy
+  - shapely
+  - tmux
+  - wget
+  - xarray
 
   - pip:
     - matplotlib-scalebar
