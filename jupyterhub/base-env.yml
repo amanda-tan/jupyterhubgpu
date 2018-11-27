@@ -1,0 +1,44 @@
+name: gda_py3 
+
+channels:
+  - conda-forge
+
+dependencies:
+  - wget
+  - tmux
+  - gdal
+  - imagemagick
+  - ffmpeg
+  - parallel
+  - coreutils
+  - htop
+  - lastools
+
+  - ipython
+  - jupyter
+  - ipdb
+  - numpy
+  - scipy
+  - matplotlib
+  - pandas
+  - rasterio
+  - geopandas
+  - xarray
+  - dask
+  - cartopy
+  - shapely
+  - fiona
+  - pillow
+  - opencv
+  - scikit-image
+  - astropy
+  - scikit-learn
+  - cython
+  - h5py 
+  - netCDF4
+  - pytz
+  - python-dateutil
+
+  - pip:
+    - matplotlib-scalebar
+
