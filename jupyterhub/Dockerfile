@@ -50,6 +50,7 @@ RUN rm -rf /home/$NB_USER/tmp
 RUN jupyter nbextension enable --py widgetsnbextension --sys-prefix 
 RUN jupyter nbextension enable --py ipyleaflet --sys-prefix
 RUN jupyter serverextension enable --py nbgitpuller --sys-prefix
+RUN jupyter labextension install @jupyterlab/hub-extension
 # Also activate ipywidgets extension for JupyterLab
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@^0.31.0 && \
     npm cache clean && \
