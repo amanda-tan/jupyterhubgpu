@@ -5,7 +5,7 @@ FROM jupyter/datascience-notebook:f2889d7ae7d6
 # ----------------------------------------
 RUN conda install -c conda-forge --yes --quiet \
     tensorflow-gpu \
-    cudatoolkit=9.0 && \
+    cudatoolkit=9.2 && \
     conda clean -tipsy && \
     fix-permissions $CONDA_DIR && \
     fix-permissions /home/$NB_USER
